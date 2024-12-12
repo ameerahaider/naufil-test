@@ -357,7 +357,7 @@ import { Alert, AlertTitle } from '@mui/material'; // Importing Material-UI Aler
 // Constants for admin login
 const ADMIN_USERNAME = "00000-0000000-0"; // Replace with your admin CNIC
 const ADMIN_PASSWORD = "admin123"; // Replace with your admin password
-const apiUrl = process.env.BACKEND || 'http://localhost:5000';
+const apiUrl = process.env.BACKEND;
 
 export default function Login() {
   const [cnic, setCnic] = useState(""); // CNIC state
