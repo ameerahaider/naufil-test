@@ -78,7 +78,7 @@ export default function Register() {
         warden_cnic: cnic,
         warden_password: password,
       };
-      route = '${apiUrl}/api/warden/signup';
+      route = `${apiUrl}/api/warden/signup`;
     } else if (role === 'citizen') {
       if (!address || !phoneNumber || !dob) {
         setErrorMessage('Please fill in all fields for citizen registration.');
@@ -95,7 +95,7 @@ export default function Register() {
         citizen_dob: dob,
         citizen_email: email,
       };
-      route = '${apiUrl}/api/citizen/signup';
+      route = `${apiUrl}/api/citizen/signup`;
     } else {
       setErrorMessage('Invalid role selected.');
       return;

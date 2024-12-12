@@ -405,8 +405,8 @@ export default function Login() {
     }
 
     const endpoint = role === "citizen"
-      ? "${apiUrl}/api/citizen/login"
-      : "${apiUrl}/api/warden/login";
+      ? `${apiUrl}/api/citizen/login`
+      : `${apiUrl}/api/warden/login`;
 
     const payload = role === "citizen"
       ? { citizen_cnic: cnic, citizen_password: password }
